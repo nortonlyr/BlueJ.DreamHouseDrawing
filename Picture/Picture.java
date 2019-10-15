@@ -14,7 +14,10 @@ public class Picture
 {
     private Square wall;
     private Square window;
+    private Square door;
+    private Square tree;
     private Triangle roof;
+    private Circle treeTop;
     private Circle sun;
 
     /**
@@ -32,19 +35,76 @@ public class Picture
     {
         wall = new Square();
         wall.moveVertical(80);
-        wall.changeSize(100);
+        wall.changeColor("blue");
+        wall.changeSize(140);
         wall.makeVisible();
+        wall.moveHorizontal(-20);
 
         window = new Square();
         window.changeColor("black");
-        window.moveHorizontal(20);
+        window.moveHorizontal(-10);
         window.moveVertical(100);
         window.makeVisible();
+        
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(80);
+        window.moveVertical(100);
+        window.makeVisible();
+        
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(35);
+        window.moveVertical(100);
+        window.makeVisible();        
+        
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(-10);
+        window.moveVertical(150);
+        window.makeVisible();
+        
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(80);
+        window.moveVertical(150);
+        window.makeVisible();
+        
 
+        door = new Square();
+        door.moveHorizontal(35);
+        door.moveVertical(170);
+        door.makeVisible();
+        
+        door = new Square();
+        door.moveHorizontal(35);
+        door.moveVertical(190);
+        door.makeVisible();
+        
+        
+        tree = new Square();
+        tree.moveHorizontal(180);
+        tree.moveVertical(170);
+        tree.makeVisible();
+        
+        tree = new Square();
+        tree.moveHorizontal(180);
+        tree.moveVertical(190);
+        tree.makeVisible();
+        
+        
+        treeTop = new Circle();
+        treeTop.changeColor("green");
+        treeTop.moveHorizontal(210);
+        treeTop.moveVertical(120);
+        treeTop.changeSize(50);
+        treeTop.makeVisible();
+
+       
         roof = new Triangle();
-        roof.changeSize(50, 140);
+        roof.changeSize(70, 160);
         roof.moveHorizontal(60);
-        roof.moveVertical(70);
+        roof.moveVertical(50);
         roof.makeVisible();
 
         sun = new Circle();
@@ -64,6 +124,7 @@ public class Picture
         {
             wall.changeColor("black");
             window.changeColor("white");
+            tree.changeColor("brown");
             roof.changeColor("black");
             sun.changeColor("black");
         }
@@ -78,6 +139,7 @@ public class Picture
         {
             wall.changeColor("red");
             window.changeColor("black");
+            door.changeColor("orange");
             roof.changeColor("green");
             sun.changeColor("yellow");
         }

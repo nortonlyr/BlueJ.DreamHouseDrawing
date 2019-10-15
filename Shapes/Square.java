@@ -26,6 +26,23 @@ public class Square
         color = "red";
         isVisible = false;
     }
+    public Square2()
+    {
+        size = 30;
+        xPosition = 60;
+        yPosition = 50;
+        color = "red";
+        isVisible = false;
+    }
+    public Square3()
+    {
+        size = 30;
+        xPosition = 60;
+        yPosition = 50;
+        color = "red";
+        isVisible = false;
+    }
+
 
     /**
      * Make this square visible. If it was already visible, do nothing.
